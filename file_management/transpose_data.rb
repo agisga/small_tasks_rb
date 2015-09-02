@@ -1,4 +1,5 @@
-# Transpose a file containing data values separated by white space characters
+# Transposes a file containing data values separated by white space characters,
+# and saves the transposed data in a different file
 #
 
 input_file = "some_data.txt"
