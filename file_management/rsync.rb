@@ -1,11 +1,11 @@
 require "rsync"
 
 source_root_folder = "/home/alexej/"
-dest_root_folder = "/media/alexej/corsair/"
+dest_root_folder = "/run/media/alexej/corsair/"
 
 items_to_sync = []
 File.open("sources_list.txt", "r") do |f|
-  items_to_sync = f.read.split /\s/
+  items_to_sync = f.read.split(/\s/)
 end
 
 items_to_sync.each do |name|
